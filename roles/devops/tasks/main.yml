@@ -1,0 +1,9 @@
+---
+# tasks file for devops
+- name: copy sample file
+  template:
+     src: templates/sample.txt
+     dest: /etc/sample.txt
+     owner: root
+     group: root
+     mode: 0444
